@@ -1,0 +1,125 @@
+:root {
+  --my-round : 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  min-width: 480px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: var(--my-round);
+  box-shadow: 0px 2px 4px rgb(189, 189, 189);
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.2em;
+  margin: 10px 0 30px 0;
+}
+
+form label:not(fieldset label) {
+  display: block;
+  margin: 16px 0 4px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+form input:not(fieldset input) {
+  width: 100%;
+  height: 30px;
+  padding: 16px 10px;
+  border: 1.5px solid tomato;
+  border-radius: var(--my-round);
+}
+
+form select {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: 1.5px solid tomato;
+  border-radius: var(--my-round);
+}
+
+form fieldset {
+  /* background-color: green; */
+  margin: 16px 0 4px 0;
+  padding: 15px;
+  padding-bottom: 25px;
+}
+
+form fieldset legend {
+  font-size: 0.9em;
+}
+
+.radio-group label {
+  margin-right: 10px;
+}
+
+form textarea {
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+  border-radius: var(--my-round);
+}
+
+form button {
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px 0;
+  background-color: rgb(1, 116, 1);
+  color: #fff;
+  font-size: 1.1em;
+  border-radius: var(--my-round);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1.5px solid yellow;
+}
+
+/* input:invalid,
+select:invalid,
+textarea:invalid {
+  border: 2px solid red;
+} */
+
+/* input:valid,
+select:valid,
+textarea:valid {
+  border: 2px solid green;
+} */
+
+button:hover {
+  background-color: rgb(0, 160, 0);
+}
+
+.radio-group input[type="radio"] {
+  transform: scale(1.2);
+}
+
+.radio-group input[type="radio"]:checked {
+  accent-color: rgb(1, 116, 1) ;
+  /* box-shadow: 0px 0px 2px gray; */
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
+
+/* input:first-of-type {
+  border-radius: 4px;
+} */

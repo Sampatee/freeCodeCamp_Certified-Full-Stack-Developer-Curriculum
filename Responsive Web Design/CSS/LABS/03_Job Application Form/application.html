@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Application Form</h1>
+      <form action="">
+        <label for="name">Name: </label>
+        <input type="text" name="" id="name" placeholder="Enter Your Name" />
+        <label for="email">Email: </label>
+        <input type="email" name="" id="email" placeholder="Enter Your email" />
+        <label for="position">Position: </label>
+        <select name="" id="position">
+          <option class="select-option" value="default" selected>Select position</option>
+          <option class="select-option" value="option1">Option 1</option>
+          <option class="select-option" value="option2">Option 2</option>
+          <option class="select-option" value="option3">Option 3</option>
+        </select>
+        <fieldset class="radio-group">
+          <legend>Availability: </legend>
+          <input type="radio" name="availability" id="option1" />
+          <label for="option1">Option 1</label>
+          <input type="radio" name="availability" id="option2" />
+          <label for="option2">Option 2</label>
+          <input type="radio" name="availability" id="option3" />
+          <label for="option3">Option 3</label>
+        </fieldset>
+        <label for="message">Write Something: </label>
+        <textarea
+          name=""
+          id="message"
+          placeholder="Write something you want us to know"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

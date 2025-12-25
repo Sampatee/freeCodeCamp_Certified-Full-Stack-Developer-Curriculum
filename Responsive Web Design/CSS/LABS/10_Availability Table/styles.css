@@ -1,0 +1,134 @@
+:root {
+    --color0: #E9FFE6;
+    --color1: #BEE6B8;
+    --color2: #85CC7A;
+    --color3: #56B347;
+    --color4: #2F991F;
+    --color5: #118000;
+    --solid-border: 2px solid #2c2c2c;
+    --dashed-border: 2px dashed #2c2c2c;
+}
+
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-bottom: var(--dashed-border);
+}
+
+.available-0 {
+    background-color: var(--color0);
+}
+
+.available-1 {
+    background-color: var(--color1);
+}
+
+.available-2 {
+    background-color: var(--color2);
+}
+
+.available-3 {
+    background-color: var(--color3);
+}
+
+.available-4 {
+    background-color: var(--color4);
+}
+
+.available-5 {
+    background-color: var(--color5);
+}
+
+#legend-gradient {
+    background-image: linear-gradient(
+        to right,
+        var(--color0) 0% 17%,
+        var(--color1) 17% 34%,
+        var(--color2) 34% 51%,
+        var(--color3) 51% 68%,
+        var(--color4) 68% 85%,
+        var(--color5) 85% 100%
+    );
+}
+
+/* my styling */
+
+:root {
+    --bg-color: #c3fe7f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    padding: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.sharp:first-of-type th {
+    padding: 0.1rem 0.5rem;
+    border-bottom: var(--solid-border);
+}
+
+.sharp:first-of-type th:first-child {
+    border: none;
+}
+
+.sharp th:first-of-type, .half th:first-of-type {
+    position: relative;
+    top: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+th, td {
+    width: 10rem;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    border-right: var(--solid-border);
+    border-left: var(--solid-border);
+}
+
+#legend {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#legend span {
+    position: relative;
+    left: -0.3rem;
+}
+
+.legend-gradient-div {
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#legend-gradient {
+    width: 5.5rem;
+    height: 1.2rem;
+    align-self: center;
+    border: var(--solid-border);
+}

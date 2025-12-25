@@ -1,0 +1,131 @@
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+}
+
+.premium-plan {
+  order: 2;
+}
+
+/* my styling */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.pricing-container {
+  width: 80%;
+  max-width: 900px;
+  padding: 0 20px;
+  border: 2px solid black;
+  gap: 20px;
+  align-content: center;
+}
+
+.pricing-card {
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  background-color: #edffff;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+.pricing-card > p {
+  font-size: 1.5rem;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.features li {
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+
+.features li span {
+  margin-right: 10px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9d9c9c;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .pricing-container {
+    height: auto;
+    padding-bottom: 20px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .pricing-card {
+    flex: 0 0 175px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .pricing-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pricing-card {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}

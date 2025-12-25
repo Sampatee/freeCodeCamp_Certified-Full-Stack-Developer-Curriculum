@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-weight: 100;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100vw;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+th {
+  padding: 0.5em;
+}
+
+tr.header {
+  background-image: linear-gradient(#fdffa1, #fdff6d);
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#d1ffb3, #98ff54);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#a8dcff, #51b8fc);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#fff8ddb4, #d48e70b4);
+}
+
+td {
+  text-align: center;
+  padding: 0.4em;
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid blue;
+  background-image: linear-gradient(lightblue 10%, royalblue);
+  border-radius: 20%/60%;
+  height: auto;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid darkgreen;
+  background-image: linear-gradient(lightgreen 10%, green);
+  border-radius: 20%/60%;
+  height: auto;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid brown;
+  background-image: linear-gradient(peachpuff 10%, rosybrown);
+  border-radius: 20%/60%;
+  height: auto;
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 1.85em;
+  width: 7em;
+  padding: 0.4em;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #575757;
+  border-radius: 50%;
+  margin: 0.2em;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: #eeeeee;
+}
+
+span[class~="one"] :nth-child(1) {
+  background-image: linear-gradient(lightyellow, yellow);
+}
+
+span[class~="two"] :nth-child(-n + 2) {
+  background-image: linear-gradient(lightyellow, yellow);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(lightyellow, yellow);
+}
