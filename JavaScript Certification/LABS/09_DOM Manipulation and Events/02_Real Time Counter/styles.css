@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+:root {
+  font-size: 20px;
+  --bg-clr: #0C7489;
+  --txt-clr: #D7D9CE;
+  --bx-shdw: #13505B;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  color: var(--txt-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+  width: 80%;
+  min-width: 700px;
+  font-size: 1.5rem;
+  padding: 20px 0 30px;
+  border: 1.5rem double var(--txt-clr);
+  border-radius: 0 40px;
+  box-shadow: inset 1px 2px 10px 2px var(--bx-shdw);
+}
+
+.heading {
+  text-align: center;
+  margin: 2rem 0
+}
+
+.heading span {
+  padding: 10px 20px;
+  background-color: var(--txt-clr);
+  color: var(--bg-clr);
+  border-bottom: 10px solid var(--bx-shdw);
+}
+
+.desc {
+  width: 80%;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.5;
+  margin: 1.5rem auto;
+}
+
+#text-input {
+  display: block;
+  width: 70%;
+  aspect-ratio: 5/1.5;
+  margin: auto;
+  padding: 0.8rem;
+  background-color: var(--txt-clr);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+#text-input:focus {
+  border: 2px solid var(--bx-shdw);
+  outline: none;
+}
+
+#char-count {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-weight: bold;
+}
