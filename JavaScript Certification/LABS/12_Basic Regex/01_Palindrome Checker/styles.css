@@ -1,0 +1,114 @@
+:root {
+  --clr-1: #f08700;
+  --clr-2: #f49f0a;
+  --clr-3: #efca08;
+  --clr-4: #00a6a6;
+  --clr-5: #bbdef0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--clr-2);
+}
+
+main {
+  width: min(80%, 510px);
+  color: #1a1a1a;
+}
+
+.header-head {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--clr-3);
+  box-shadow: 0 10px 0 var(--clr-1);
+}
+
+.input-prompt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  padding: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid var(--clr-1);
+  width: 60%;
+  padding: 4px 0;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+  background-color: transparent;
+}
+
+.input:focus {
+  outline: 2px solid var(--clr-5);
+}
+
+.chk-button {
+  padding: 6px 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--clr-1);
+  color: var(--clr-5);
+}
+
+.chk-button:hover {
+  cursor: pointer;
+  background-color: var(--clr-4);
+}
+
+.chk-button:active {
+  transform: translateY(5%);
+}
+
+.result-container {
+  text-align: center;
+}
+
+.meaning-container {
+  margin: 40px auto 0;
+  padding: 20px;
+  width: 90%;
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.2;
+  border-radius: 20px;
+  background-color: var(--clr-5);
+}
+
+.meaning {
+  text-align: justify;
+}
