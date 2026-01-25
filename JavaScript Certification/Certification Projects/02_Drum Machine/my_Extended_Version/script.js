@@ -136,6 +136,7 @@ const handlePwrBtnClick = () => {
   document.querySelector("#pwr-status").textContent = isPowerOn ? "On" : "Off";
   display.textContent = "";
   pwrBtn.children[0].classList.toggle("btn-off"); //style btn-off
+  padbank.classList.toggle("power-off", !isPowerOn);
 };
 
 const handleBnkBtnClick = () => {

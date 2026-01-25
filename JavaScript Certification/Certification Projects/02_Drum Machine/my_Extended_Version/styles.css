@@ -137,3 +137,8 @@ body {
   cursor: pointer;
   background-color: var(--clr2);
 }
+
+.power-off .drum-pad:active{ 
+  background-color: var(--clr3);
+  color: var(--clr2);
+}
