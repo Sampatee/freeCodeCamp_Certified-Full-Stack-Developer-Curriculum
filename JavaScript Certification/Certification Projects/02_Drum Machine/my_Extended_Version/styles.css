@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+
+:root {
+  --clr1: #606c38;
+  --clr2: #283618;
+  --clr3: #fefae0;
+  --clr4: #dda15e;
+  --clr5: #bc6c25;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: var(--clr2);
+}
+
+#drum-machine {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--clr5);
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.drum-pad {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: var(--clr4);
+  color: var(--clr2);
+}
+
+.drum-pad:hover {
+  background-color: var(--clr3);
+  cursor: pointer;
+}
+
+.drum-pad:active,
+.active {
+  background-color: var(--clr1);
+  color: var(--clr3);
+  cursor: pointer;
+}
+
+#display {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--clr1);
+  color: var(--clr3);
+}
+
+/* extra */
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr2);
+}
+
+.slider-btn {
+  border: none;
+  width: 20%;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: var(--clr4);
+}
+
+.slider-thumb {
+  width: 40%;
+  aspect-ratio: 1;
+  margin: 3px 4px;
+  border-radius: 50%;
+  background-color: var(--clr5);
+  transform: translateX(110%);
+  transition: all 0.3s ease-in;
+}
+
+.btn-off {
+  transform: translateX(0);
+}
+
+.volume-control {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--clr2);
+}
+
+#volume {
+  appearance: none;
+  max-height: 5px;
+  border-radius: 100px;
+  background-color: var(--clr1);
+}
+
+#volume::-webkit-slider-thumb {
+  appearance: none;
+  width: 5%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--clr2);
+}
+
+#volume::-ms-thumb {
+  appearance: none;
+  width: 5%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--clr2);
+}
