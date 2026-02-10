@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="weather-container" class="weather-container">
+        <div id="weather-info" class="hidden">
+          <h2 id="location" class="location"></h2>
+          <div class="primary-info">
+            <p id="main-temperature" class="temp"></p>
+            <div class="primary-info-right">
+              <img id="weather-icon" src="" alt="" />
+              <p id="weather-main" class="description"></p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="secondary-info">
+            <div class="secondary-info-top">
+              <p class="humidity">Humidity: <span id="humidity"></span></p>
+              <p class="feels-like">
+                Feels Like: <span id="feels-like"></span>
+              </p>
+            </div>
+            <div class="secondary-info-bottom">
+              <div class="secondary-info-bottom-left">
+                <p class="wind-info">Wind: <span id="wind"></span></p>
+                <p class="gust-info">Gusts: <span id="wind-gust"></span></p>
+              </div>
+              <div class="secondary-info-bottom-right">
+                <div id="compass-arrow" class="compass-arrow">
+                  <div class="arrow-head"></div>
+                </div>
+                <div class="compass-direction top"></div>
+                <div class="compass-direction right"></div>
+                <div class="compass-direction bottom"></div>
+                <div class="compass-direction left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="controls" class="controls-container">
+        <h2 class="controls-heading">Weather For:</h2>
+        <select name="city-dropdown" id="city-dropdown" class="dropdown">
+          <option value=""></option>
+          <option value="new york">New York</option>
+          <option value="los angeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="london">London</option>
+        </select>
+        <button type="button" id="get-weather-btn" class="btn">
+          Get Weather
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

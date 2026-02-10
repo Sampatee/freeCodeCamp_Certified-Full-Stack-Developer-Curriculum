@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid green; */
+}
+
+:root {
+  --clr1: #e5d9f2;
+  --clr2: #f5efff;
+  --clr3: #cdc1ff;
+  --clr4: #a594f9;
+  --clr5: #7371fc;
+  --font1: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: var(--clr4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font1);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100;
+}
+
+main {
+  width: 95%;
+}
+
+.weather-container {
+  width: 100%;
+  min-height: 40vh;
+  background-color: var(--clr1);
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.controls-container {
+  margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--clr5);
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.controls-heading {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: var(--clr2);
+  font-weight: 400;
+}
+
+.dropdown {
+  width: 12rem;
+  aspect-ratio: 4/1;
+  margin: auto;
+  background-color: var(--clr2);
+}
+
+.btn {
+  width: 12rem;
+  aspect-ratio: 4/1;
+  margin: auto;
+  font-size: 1.5rem;
+  background-color: var(--clr2);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 350;
+}
+
+.btn:hover {
+  background-color: var(--clr1);
+}
+
+.btn:active {
+  background-color: var(--clr2);
+}
+
+.location {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.primary-info {
+  margin: 0.6rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.primary-info-right {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--clr5);
+}
+
+.secondary-info-top {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.secondary-info-bottom {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.secondary-info-bottom-left p {
+  margin: 1rem 0;
+}
+
+.secondary-info-bottom-right {
+  margin-right: 2rem;
+  width: 5.5rem;
+  aspect-ratio: 1;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.compass-direction {
+  width: 0.2rem;
+  height: 0.5rem;
+  background-color: black;
+}
+
+.top {
+  position: absolute;
+  top: -0.6rem;
+  left: calc(50% - 0.2rem);
+}
+
+.right {
+  position: absolute;
+  top: calc(50% - 0.2rem);
+  right: -0.5rem;
+  transform: rotate(90deg);
+}
+
+.bottom {
+  position: absolute;
+  bottom: -0.6rem;
+  left: calc(50% - 0.2rem);
+}
+
+.left {
+  position: absolute;
+  top: calc(50% - 0.2rem);
+  left: -0.5rem;
+  transform: rotate(90deg);
+}
+
+.compass-arrow {
+  height: 4rem;
+  aspect-ratio: 1/16;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.arrow-head {
+  width: 0;
+  height: 0;
+  border: 0.5rem solid transparent;
+  border-bottom-color: black;
+  position: absolute;
+  top: -0.8rem;
+  left: -0.38rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown option {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .weather-container {
+    border-width: 1.5px;
+  }
+
+  .controls-container {
+    padding: 1rem 0.8rem;
+    border-width: 1.4px;
+  }
+
+  .controls-heading {
+    font-size: 1.5rem;
+  }
+
+  .dropdown {
+    width: 8rem;
+    margin: 0;
+  }
+
+  .btn {
+    width: 8rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 60%;
+  }
+}
