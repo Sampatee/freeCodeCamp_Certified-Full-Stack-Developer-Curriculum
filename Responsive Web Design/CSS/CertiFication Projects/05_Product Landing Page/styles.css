@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+:root {
+  --clr1: #006d77;
+  --clr2: #83c5be;
+  --clr3: #edf6f9;
+  --font1: "Lato", sans-serif;
+}
+
+body {
+  width: 100vw;
+  font-family: var(--font1);
+  background-color: var(--clr3);
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--clr3);
+  position: fixed;
+  top: 0;
+}
+
+#header-img {
+  width: max(300px, 80%);
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#nav-bar {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#nav-bar ul li {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+#hero {
+  margin-top: 200px;
+  padding: 1rem;
+  width: 100%;
+}
+
+#hero-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#email {
+  display: block;
+  margin: auto;
+  width: 15rem;
+  aspect-ratio: 10 / 1;
+  padding: 0.3rem 0.5rem;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: var(--clr1);
+  color: var(--clr3);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: var(--clr2);
+}
+
+#features {
+  padding: 1rem 2rem;
+}
+
+#features ul li {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  color: var(--clr1);
+  width: 100px;
+  aspect-ratio: 1;
+  margin-top: 0.8rem;
+  display: none;
+}
+
+.feature-desc {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feature-heading {
+  margin-bottom: 0.2rem;
+}
+
+#video {
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 2rem auto;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.price-card {
+  width: 300px;
+  border: 1px solid var(--clr1);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.price-head {
+  background-color: var(--clr2);
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.price {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.price-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.price-card ul li {
+  margin: 0.5rem 0;
+}
+
+.price-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+  background-color: var(--clr1);
+  color: var(--clr3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.price-btn:hover {
+  background-color: var(--clr2);
+}
+
+footer {
+  background-color: var(--clr2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0.5rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  color: #00000088;
+}
+
+/* screen bigger than 500px */
+@media screen and (min-width: 500px) {
+  #header {
+    align-items: center;
+  }
+
+  #header-img {
+    width: 300px;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  #nav-bar {
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  #hero {
+    margin-top: 5rem;
+  }
+}
+
+/* screen bigger than 600px */
+@media screen and (min-width: 600px) {
+  #header {
+    height: 5rem;
+  }
+
+  #header-img {
+    margin: 10px;
+    margin-right: 0;
+  }
+
+  #nav-bar {
+    margin-right: 20px;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  #features {
+    padding-bottom: 0;
+    margin: auto;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .feature-desc {
+    width: 80%;
+    margin-left: 2rem;
+    text-align: left;
+  }
+}
+
+/* screen bigger than 900px */
+@media screen and (min-width: 900px) {
+  #features {
+    width: 60%;
+  }
+
+  .feature-desc {
+    margin-left: 0;
+  }
+
+  #pricing {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
