@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+body {
+  background-color: thistle;
+}
+
+#playing-cards {
+  max-width: 90%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 270px;
+  aspect-ratio: 6 / 9;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.left {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle {
+  align-self: center;
+  font-size: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.size1 {
+  font-size: 2rem;
+}
+
+.size2 {
+  font-size: 1.8rem;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.red {
+  color: red;
+}
+
+/* not required */
+@media screen and (min-width: 1080px) {
+  #playing-cards {
+    max-width: 70%;
+  }
+}
