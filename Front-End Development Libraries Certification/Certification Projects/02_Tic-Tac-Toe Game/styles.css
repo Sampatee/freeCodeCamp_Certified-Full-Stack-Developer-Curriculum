@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+body {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.game-info {
+  font-size: 1.185rem;
+}
+
+.square-grid {
+  margin: 20px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 66px);
+  grid-template-rows: repeat(3, 66px);
+  justify-content: center;
+  gap: 10px;
+}
+
+.square {
+  border: 1px solid #8f8f8f;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  background-color: transparent;
+}
+
+#reset {
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 1.025rem;
+}
+
+button {
+  cursor: pointer;
+}
